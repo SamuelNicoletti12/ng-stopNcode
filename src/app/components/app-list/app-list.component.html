@@ -1,0 +1,5 @@
+<h1>Business</h1>
+<h3 class="text-muted">Counter: {{ models.length }}</h3>
+<section class="d-flex flex-wrap gap-4">
+  <app-app-item *ngFor="let m of models" [model]="m"></app-app-item>
+</section>

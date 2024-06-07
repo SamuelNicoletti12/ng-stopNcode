@@ -1,0 +1,14 @@
+<div *ngIf="model" class="card" style="width: 18rem">
+  <div class="card-body" style="border: 1px solid black">
+    <p class="card-title">Name: {{ model.business }}</p>
+    <p class="card-subtitle mb-2 text-body-secondary">
+      {{ model.name }}
+    </p>
+    <p class="card-subtitle mb-2 text-body-secondary">
+      Account: {{ model.account }}
+    </p>
+    <p class="card-text">Date: {{ model.date | date : "mediumDate" }}</p>
+    <p class="card-text">Type: {{ model.type }}</p>
+    <p class="card-text">Amount: {{ model.amount | currency }}</p>
+  </div>
+</div>
